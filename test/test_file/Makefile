@@ -1,0 +1,26 @@
+override CXX = g++
+override CPPFLAGS = -DNDEBUG
+override CXXFLAGS = -O2
+override CC = $(CXX)
+override CFLAGS = $(CXXFLAGS)
+%.out:%.o
+	$(CXX) $(CFLAGS) $(CPPFLAGS) -o $(@) $(<)
+
+test_file.out: test_file.o
+
+.PHONY: run
+run: test_file.out
+	./test_file.out
+	cat test_open_file_c.txt
+
+.PHONY: clean
+clean:
+	-rm *.o
+	-rm *.out
+
+.PHONY: clean_run
+clean_run:
+	-rm *.txt
+
+.PHONY: clean_all
+clean_all: clean clean_run

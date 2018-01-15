@@ -1,0 +1,14 @@
+*.db
+*.log
+*.exe
+*.pdb
+*.ilk
+*.ipdb
+*.iobj
+test/test_time/Release/
+test/test_time/Debug/
+test/test_file/Release/
+test/test_file/Debug/
+test/cpp_snippet/Release/
+test/cpp_snippet/Debug/
+test/.vs/
