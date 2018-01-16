@@ -3,14 +3,13 @@ using namespace std;
 
 #include "../../scr/lion_snippets.hpp"
 
-void test_get_time()
+void test_disp_env()
 {
-	string time_str = liton_sp::time::get_time();
-	cout << time_str << endl;
+	liton_sp::env::disp_env(cout);
 }
 
 int main(int argc, char** argv)
 {
-    test_get_time();
+	test_disp_env();
 	return 0;
 }
