@@ -12,3 +12,5 @@ test/test_file/Release/
 test/test_file/Debug/
 test/test_env/Debug/
 test/test_env/Release/
+liton_cpp_snippets_subtree_pull.bat
+liton_cpp_snippets_subtree_push.bat
