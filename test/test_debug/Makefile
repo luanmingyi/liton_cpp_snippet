@@ -1,6 +1,6 @@
 override CXX = g++
 override CPPFLAGS = -DNDEBUG
-override CXXFLAGS = -O2
+override CXXFLAGS = -std=c++11 -O2
 override CC = $(CXX)
 override CFLAGS = $(CXXFLAGS)
 proname = test_debug

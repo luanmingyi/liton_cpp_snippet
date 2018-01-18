@@ -1,5 +1,7 @@
 #include <iostream>
 #include <fstream>
+#include <stdexcept>
+#include <string>
 using namespace std;
 
 #include "../../scr/lion_snippets.hpp"
@@ -8,7 +10,7 @@ void test_exec_except()
 {
 	ofstream out("out.txt");
 	ofstream err("err.txt");
-	liton_sp::debug::exec_except([]() {throw exception("exception"); }, out, err);
+	liton_sp::debug::exec_except([]() {throw runtime_error(string("exception")); }, out, err);
 	out.close();
 	err.close();
 }

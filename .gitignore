@@ -11,6 +11,7 @@ liton_cpp_snippets_subtree_pull.bat
 liton_cpp_snippets_subtree_push.bat
 
 test/.vs/
+test/.vscode/
 test/test_time/Release/
 test/test_time/Debug/
 test/test_file/Release/
