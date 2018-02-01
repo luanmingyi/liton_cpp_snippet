@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 
-#include "../../scr/lion_snippets.hpp"
+#include "../../scr/liton_cpp_snippets/lion_snippets.hpp"
 
 void test_exec_except()
 {
