@@ -3,15 +3,17 @@ override CPPFLAGS = -DNDEBUG
 override CXXFLAGS = -O2
 override CC = $(CXX)
 override CFLAGS = $(CXXFLAGS)
+proname = test_file
+
 %.out:%.o
 	$(CXX) $(CFLAGS) $(CPPFLAGS) -o $(@) $(<)
 
-test_file.out: test_file.o
+$(proname).out: $(proname).o
 
 .PHONY: run
-run: test_file.out
-	./test_file.out
-	cat test_open_file_c.txt
+run: $(proname).out
+	./$(proname).out
+	cat *.txt
 
 .PHONY: clean
 clean:

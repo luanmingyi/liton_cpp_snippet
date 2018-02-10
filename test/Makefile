@@ -1,4 +1,4 @@
-subfolder = test_file test_time
+subfolder = test_file test_time test_env test_debug
 
 out_flag = $(foreach n,$(subfolder),$(n).out_flag)
 %.out_flag:

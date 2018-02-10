@@ -1,9 +1,9 @@
 override CXX = g++
 override CPPFLAGS = -DNDEBUG
-override CXXFLAGS = -O2
+override CXXFLAGS = -std=c++11 -O2
 override CC = $(CXX)
 override CFLAGS = $(CXXFLAGS)
-proname = test_time
+proname = test_debug
 
 %.out:%.o
 	$(CXX) $(CFLAGS) $(CPPFLAGS) -o $(@) $(<)
@@ -13,6 +13,7 @@ $(proname).out: $(proname).o
 .PHONY: run
 run: $(proname).out
 	./$(proname).out
+	cat *.txt
 
 .PHONY: clean
 clean:

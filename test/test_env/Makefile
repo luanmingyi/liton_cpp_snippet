@@ -3,7 +3,7 @@ override CPPFLAGS = -DNDEBUG
 override CXXFLAGS = -O2
 override CC = $(CXX)
 override CFLAGS = $(CXXFLAGS)
-proname = test_time
+proname = test_env
 
 %.out:%.o
 	$(CXX) $(CFLAGS) $(CPPFLAGS) -o $(@) $(<)
