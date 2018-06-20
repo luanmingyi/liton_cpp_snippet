@@ -7,6 +7,7 @@
 *.ipdb
 *.iobj
 *.bat
+*.user
 
 test/.vs/
 test/.vscode/
@@ -18,3 +19,8 @@ test/test_env/Debug/
 test/test_env/Release/
 test/test_debug/Debug/
 test/test_debug/Release/
+test/test_debug/x64/
+test/test_env/x64/
+test/test_file/x64/
+test/test_time/x64/
+
