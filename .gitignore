@@ -1,26 +1,7 @@
-*.db
-*.opendb
-*.log
-*.exe
-*.pdb
-*.ilk
-*.ipdb
-*.iobj
 *.bat
-*.user
 
-test/.vs/
 test/.vscode/
-test/test_time/Release/
-test/test_time/Debug/
-test/test_file/Release/
-test/test_file/Debug/
-test/test_env/Debug/
-test/test_env/Release/
-test/test_debug/Debug/
-test/test_debug/Release/
-test/test_debug/x64/
-test/test_env/x64/
-test/test_file/x64/
-test/test_time/x64/
+test/_build/
 
+pull.log
+push.log

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<case>
+    <root>.</root>
+    <name>Euler_01</name>
+    <note>
+        note
+    </note>
+    <grid>
+        <file>grid.xml</file>
+    </grid>
+    <parameter>
+        <!--function file-->
+        <mode>function</mode>
+        <file></file>
+    </parameter>
+    <initial_condition>
+        <step>0</step>
+        <file>initial.xml</file>
+    </initial_condition>
+    <slover_control>
+        <CFL_flow>0.5</CFL_flow>
+        <dt_max_flow>1</dt_max_flow>
+        <CFL_reac>0.5</CFL_reac>
+        <dt_max_reac>1</dt_max_reac>
+    </slover_control>
+    <case_control>
+        <log>
+            <!--none:0 step:1 time:2-->
+            <mode>0</mode>
+            <num>1</num>
+        </log>
+        <output>
+            <!--none:0 step:1 time:2-->
+            <mode>2</mode>
+            <num>4e-5</num>
+        </output>
+        <stop>
+            <!--none:0 step:1 time:2-->
+            <mode>2</mode>
+            <num>5e-3</num>
+        </stop>
+    </case_control>
+</case>
