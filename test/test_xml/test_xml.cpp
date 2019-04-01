@@ -3,8 +3,8 @@
 using namespace std;
 
 #define SP_TINYXML
-#include "../../scr/liton_cpp_snippets/lion_snippets.hpp"
-#include "../../scr/tinyxml2/tinyxml2.h"
+#include "lion_snippets.hpp"
+#include "tinyxml2.h"
 
 void test_load_xml(std::string xml_file_name, std::string root_node_name)
 {

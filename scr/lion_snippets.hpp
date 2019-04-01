@@ -12,7 +12,7 @@
 #include <ctime>
 
 #ifdef SP_TINYXML
-	#include "../tinyxml2/tinyxml2.h"
+	#include "tinyxml2.h"
 #endif
 
 namespace liton_sp
@@ -190,7 +190,7 @@ namespace liton_sp
 
 		static const tinyxml2::XMLElement* get_xmlnode(const tinyxml2::XMLElement* xml, const std::string &node_name)
 		{
-			check_xmlnode(xml,node_name);
+			check_xmlnode(xml, node_name);
 			return xml->FirstChildElement(node_name.c_str());
 		}
 #endif

@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-#include "../../scr/liton_cpp_snippets/lion_snippets.hpp"
+#include "lion_snippets.hpp"
 
 void test_get_time()
 {
@@ -11,6 +11,6 @@ void test_get_time()
 
 int main(int argc, char** argv)
 {
-    test_get_time();
+	test_get_time();
 	return 0;
 }
